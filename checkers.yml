@@ -1,0 +1,14 @@
+notify: &notify
+  - stdout: ~
+  - twitter: rodrigoavila
+
+checkers:
+  - name: Laydata
+    url: https://laydata.com.br
+    notify: *notify
+    status: 200
+
+  - name: CorujaLab
+    url: https://corujalab.com.br
+    notify: *notify
+    status: 200
